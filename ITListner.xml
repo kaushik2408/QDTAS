@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Com.Utility.ObjectRepo"/>
+      <class name="API.EndPoint_Leave.Leave_EndPoints"/>
+      <class name="API.EndPoint_Department.Department_EndPoints"/>
+      <class name="API.EndPoint_Project.Project_EndPoints"/>
+       <class name="API.EndPoint_Timesheet.Timesheet_EndPoints"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,199 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>24/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 11 13:00:52 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>11 seconds (11215 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='API.EndPoint_Project.Project_EndPoints.Verify_Searchproject()'><b>Verify_Searchproject</b><br>Test class: API.EndPoint_Project.Project_EndPoints<br>Parameters: { "key":"HRM", "pgn": "1", "sz": "10 "}</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Project.Project_EndPoints@2a7f1f10</td></tr>
+<tr>
+<td title='API.EndPoint_Department.Department_EndPoints.Verify_AddDepartment()'><b>Verify_AddDepartment</b><br>Test class: API.EndPoint_Department.Department_EndPoints<br>Parameters: { "deptId":"1","deptName": "Development",}</td>
+<td></td>
+<td>1</td>
+<td>API.EndPoint_Department.Department_EndPoints@298a5e20</td></tr>
+<tr>
+<td title='API.EndPoint_Project.Project_EndPoints.Verify_addproject()'><b>Verify_addproject</b><br>Test class: API.EndPoint_Project.Project_EndPoints<br>Parameters: { "projectName":"QDTASHRM", "description": "Business", "status": "Ok ","type": "Admin","client": "Manager","pId": "12"}</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Project.Project_EndPoints@2a7f1f10</td></tr>
+<tr>
+<td title='API.EndPoint_Leave.Leave_EndPoints.Verify_Deleteleave()'><b>Verify_Deleteleave</b><br>Test class: API.EndPoint_Leave.Leave_EndPoints<br>Parameters: { "leaveId":"49"}</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Leave.Leave_EndPoints@4d154ccd</td></tr>
+<tr>
+<td title='API.EndPoint_Department.Department_EndPoints.Verify_UpdateDepartment()'><b>Verify_UpdateDepartment</b><br>Test class: API.EndPoint_Department.Department_EndPoints<br>Parameters: { "deptId":"1","deptName": "Development",}</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Department.Department_EndPoints@298a5e20</td></tr>
+<tr>
+<td title='API.EndPoint_Project.Project_EndPoints.CheckAPI()'><b>CheckAPI</b><br>Test class: API.EndPoint_Project.Project_EndPoints</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Project.Project_EndPoints@2a7f1f10</td></tr>
+<tr>
+<td title='API.EndPoint_Project.Project_EndPoints.Verify_getallproject()'><b>Verify_getallproject</b><br>Test class: API.EndPoint_Project.Project_EndPoints<br>Parameters: { "pgn": "1","sz": "10"}</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Project.Project_EndPoints@2a7f1f10</td></tr>
+<tr>
+<td title='API.EndPoint_Project.Project_EndPoints.Verify_removeemployee()'><b>Verify_removeemployee</b><br>Test class: API.EndPoint_Project.Project_EndPoints<br>Parameters: { "empId": "220","pId ": "10"}</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Project.Project_EndPoints@2a7f1f10</td></tr>
+<tr>
+<td title='API.EndPoint_Timesheet.Timesheet_EndPoints.Verify_GetallEmpTimesheet()'><b>Verify_GetallEmpTimesheet</b><br>Test class: API.EndPoint_Timesheet.Timesheet_EndPoints<br>Parameters: { "timeSheetId":"1"}</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Timesheet.Timesheet_EndPoints@46cdf8bd</td></tr>
+<tr>
+<td title='API.EndPoint_Timesheet.Timesheet_EndPoints.Verify_DeleteTimesheet()'><b>Verify_DeleteTimesheet</b><br>Test class: API.EndPoint_Timesheet.Timesheet_EndPoints<br>Parameters: { "timeSheetId":"1"}</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Timesheet.Timesheet_EndPoints@46cdf8bd</td></tr>
+<tr>
+<td title='API.EndPoint_Project.Project_EndPoints.Verify_removeMultipleemployee()'><b>Verify_removeMultipleemployee</b><br>Test class: API.EndPoint_Project.Project_EndPoints<br>Parameters: { "pId ": "4","empId": "220"}</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Project.Project_EndPoints@2a7f1f10</td></tr>
+<tr>
+<td title='API.EndPoint_Department.Department_EndPoints.Verify_GetallEmpDepartment()'><b>Verify_GetallEmpDepartment</b><br>Test class: API.EndPoint_Department.Department_EndPoints<br>Parameters: { "deptId":"13","deptName": "Qa"}</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Department.Department_EndPoints@298a5e20</td></tr>
+<tr>
+<td title='API.EndPoint_Project.Project_EndPoints.Verify_Updateproject()'><b>Verify_Updateproject</b><br>Test class: API.EndPoint_Project.Project_EndPoints<br>Parameters: { "projectName":"QDTASHRM", "description": "Business", "status": "Ok ","type": "Admin","client": "Manager"}</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Project.Project_EndPoints@2a7f1f10</td></tr>
+<tr>
+<td title='API.EndPoint_Department.Department_EndPoints.Verify_DeleteDepartment()'><b>Verify_DeleteDepartment</b><br>Test class: API.EndPoint_Department.Department_EndPoints<br>Parameters: { "deptId":"13","deptName": "Qa"}</td>
+<td></td>
+<td>1</td>
+<td>API.EndPoint_Department.Department_EndPoints@298a5e20</td></tr>
+<tr>
+<td title='API.EndPoint_Department.Department_EndPoints.Bearer()'><b>Bearer</b><br>Test class: API.EndPoint_Department.Department_EndPoints</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Department.Department_EndPoints@298a5e20</td></tr>
+<tr>
+<td title='API.EndPoint_Leave.Leave_EndPoints.Verify_Updateleave()'><b>Verify_Updateleave</b><br>Test class: API.EndPoint_Leave.Leave_EndPoints<br>Parameters: { "leaveId":"49", "employeeId": "1", "startDate": "2024-02-29T02:59:31.302Z ","endDate": "2024-03-04T02:59:31.302Z","reason": "Flue","status": "Updated"}</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Leave.Leave_EndPoints@4d154ccd</td></tr>
+<tr>
+<td title='API.EndPoint_Leave.Leave_EndPoints.Verify_Rejectleave()'><b>Verify_Rejectleave</b><br>Test class: API.EndPoint_Leave.Leave_EndPoints<br>Parameters: { "leaveId":"49"}</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Leave.Leave_EndPoints@4d154ccd</td></tr>
+<tr>
+<td title='API.EndPoint_Leave.Leave_EndPoints.Verify_Createleave()'><b>Verify_Createleave</b><br>Test class: API.EndPoint_Leave.Leave_EndPoints<br>Parameters: { "leaveId":"49", "employeeId": "1", "startDate": "2024-02-29T02:59:31.302Z ","endDate": "2024-03-04T02:59:31.302Z","reason": "Flue","status": "Create"}</td>
+<td></td>
+<td>1</td>
+<td>API.EndPoint_Leave.Leave_EndPoints@4d154ccd</td></tr>
+<tr>
+<td title='API.EndPoint_Timesheet.Timesheet_EndPoints.Verify_UpdateTimesheet()'><b>Verify_UpdateTimesheet</b><br>Test class: API.EndPoint_Timesheet.Timesheet_EndPoints<br>Parameters: { "timeSheetId":"1","startTime": "10:00:00","endTime": "18:00:00","date": "2024-03-09","note": "Finals","projectId": " 2"}</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Timesheet.Timesheet_EndPoints@46cdf8bd</td></tr>
+<tr>
+<td title='API.EndPoint_Leave.Leave_EndPoints.Verify_Approveleave()'><b>Verify_Approveleave</b><br>Test class: API.EndPoint_Leave.Leave_EndPoints<br>Parameters: { "leaveId":"49"}</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Leave.Leave_EndPoints@4d154ccd</td></tr>
+<tr>
+<td title='API.EndPoint_Timesheet.Timesheet_EndPoints.Verify_AddTimesheet()'><b>Verify_AddTimesheet</b><br>Test class: API.EndPoint_Timesheet.Timesheet_EndPoints<br>Parameters: { "timeSheetId":"1","startTime": "10:00:00","endTime": "18:00:00","date": "2024-03-09","note": "Finals","projectId": " 2","empId":"225"}</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Timesheet.Timesheet_EndPoints@46cdf8bd</td></tr>
+<tr>
+<td title='API.EndPoint_Department.Department_EndPoints.Verify_GetallDepartment()'><b>Verify_GetallDepartment</b><br>Test class: API.EndPoint_Department.Department_EndPoints<br>Parameters: { "deptId":"13","deptName": "Qa"}</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Department.Department_EndPoints@298a5e20</td></tr>
+<tr>
+<td title='API.EndPoint_Project.Project_EndPoints.Verify_assignall()'><b>Verify_assignall</b><br>Test class: API.EndPoint_Project.Project_EndPoints<br>Parameters: { "pId": "2","empIds": "220"}</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Project.Project_EndPoints@2a7f1f10</td></tr>
+<tr>
+<td title='API.EndPoint_Project.Project_EndPoints.Verify_assignEmployee()'><b>Verify_assignEmployee</b><br>Test class: API.EndPoint_Project.Project_EndPoints<br>Parameters: { "empId":"220", "pId": "2"}</td>
+<td></td>
+<td>0</td>
+<td>API.EndPoint_Project.Project_EndPoints@2a7f1f10</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-13T11:12:09 IST" name="Default suite" finished-at="2024-03-13T11:12:13 IST" duration-ms="4085">
+    <groups>
+    </groups>
+    <test started-at="2024-03-13T11:12:09 IST" name="Default test" finished-at="2024-03-13T11:12:13 IST" duration-ms="4085">
+      <class name="API.EndPoint_Task.Task_EndPoints">
+        <test-method signature="Verify_AssignTask(java.lang.String)[pri:1, instance:API.EndPoint_Task.Task_EndPoints@242b836]" started-at="2024-03-13T11:12:09 IST" name="Verify_AssignTask" data-provider="AssignTaskDataProvider" finished-at="2024-03-13T11:12:11 IST" duration-ms="2083" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ "id":"0","name": "Create api","description": "make sure create swagger","dueDate": "2024-03-14","assignee": "314","empId": " 293"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_AssignTask -->
+        <test-method signature="Verify_ReviewTask(java.lang.String)[pri:2, instance:API.EndPoint_Task.Task_EndPoints@242b836]" started-at="2024-03-13T11:12:11 IST" name="Verify_ReviewTask" data-provider="ReviewTaskDataProvider" finished-at="2024-03-13T11:12:11 IST" duration-ms="358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ "tId":"1"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_ReviewTask -->
+        <test-method signature="Verify_CompletedTask(java.lang.String)[pri:3, instance:API.EndPoint_Task.Task_EndPoints@242b836]" started-at="2024-03-13T11:12:11 IST" name="Verify_CompletedTask" data-provider="CompletedTaskDataProvider" finished-at="2024-03-13T11:12:12 IST" duration-ms="366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ "timeSheetId":"1"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_CompletedTask -->
+        <test-method signature="Verify_GetTaskstatus(java.lang.String)[pri:4, instance:API.EndPoint_Task.Task_EndPoints@242b836]" started-at="2024-03-13T11:12:12 IST" name="Verify_GetTaskstatus" data-provider="GetTaskstatusDataProvider" finished-at="2024-03-13T11:12:12 IST" duration-ms="332" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ "eld":"293"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_GetTaskstatus -->
+        <test-method signature="Verify_GetTaskEmpId(java.lang.String)[pri:5, instance:API.EndPoint_Task.Task_EndPoints@242b836]" started-at="2024-03-13T11:12:12 IST" name="Verify_GetTaskEmpId" data-provider="GetTaskEmpIdDataProvider" finished-at="2024-03-13T11:12:13 IST" duration-ms="905" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ "eld":"293"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_GetTaskEmpId -->
+      </class> <!-- API.EndPoint_Task.Task_EndPoints -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
